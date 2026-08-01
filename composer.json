@@ -1,8 +1,8 @@
 {
-	"name": "atoum/atoum",
+	"name": "atoum-next/atoum-next",
 	"type": "library",
-	"description": "Simple modern and intuitive unit testing framework for PHP 8.1+",
-	"keywords": ["TDD","atoum","test","unit testing"],
+	"description": "Simple modern and intuitive unit testing framework for PHP 8.1+ — the community-driven continuation of atoum",
+	"keywords": ["TDD","atoum","atoum-next","test","unit testing"],
 	"homepage": "http://www.atoum.org",
 	"license": "BSD-3-Clause",
 	"authors":
@@ -42,7 +42,8 @@
 		"friendsofphp/php-cs-fixer": "^3.86"
 	},
 	"replace": {
-		"mageekguy/atoum": "*"
+		"mageekguy/atoum": "*",
+		"atoum/atoum": "*"
 	},
 	"bin":
 	[
@@ -59,7 +60,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "4.x-dev"
+			"dev-main": "5.x-dev"
 		}
 	}
 }

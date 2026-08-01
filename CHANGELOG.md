@@ -1,5 +1,16 @@
 # `dev-main`
 
+# 5.0.0 - 2026-08-01
+
+**atoum-next is born.** The original [atoum/atoum](https://github.com/atoum/atoum) project was archived by its
+maintainers; atoum-next picks up where it left off as a community-driven continuation, under the same BSD-3-Clause
+license and the same `atoum` PHP namespace, so existing test suites keep working unchanged.
+
+* feat: Add PHP 8.0+ typing to the entire codebase ([@toxicity1985])
+* feat: Implement native PHP attributes support ([@toxicity1985])
+* style: Harmonize code style across the codebase ([@toxicity1985])
+* Add PHP 8.5 support in CI, with mock generator compatibility fixes ([@toxicity1985])
+
 # 4.4.1 - 2025-10-14
 * [#916](https://github.com/atoum/atoum/pull/916) Fix issue related to self, parent and static return type ([@toxicity1985])
 
@@ -383,3 +394,4 @@
 [@shavounet]: https://github.com/shavounet
 [@fberthereau]: https://github.com/fberthereau
 [@pierstoval]: https://github.com/pierstoval
+[@toxicity1985]: https://github.com/toxicity1985
