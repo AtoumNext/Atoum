@@ -4,7 +4,7 @@
 
 Version 5.0 is the first release of **atoum-next**, the community continuation of the archived
 [atoum/atoum](https://github.com/atoum/atoum) project. The PHP namespace is unchanged (`atoum\...`), so this is a
-drop-in upgrade for most projects — only the Composer package name changes (`atoum-next/atoum-next`).
+drop-in upgrade for most projects — only the Composer package name changes (`atoum-next/atoum`).
 
 atoum-next `5.0` requires **PHP `>= 8.1`**.
 

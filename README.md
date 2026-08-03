@@ -1,12 +1,12 @@
 ![atoum's logo](resources/images/logo.png)
 
-# *atoum-next* [![Package version](https://img.shields.io/packagist/v/atoum-next/atoum-next.svg)](https://packagist.org/packages/atoum-next/atoum-next) [![Build Status](https://github.com/atoum-next/atoum-next/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/atoum-next/atoum-next/actions/workflows/unit-tests.yml?query=branch%3Amain) [![Coverage Status](https://coveralls.io/repos/github/atoum-next/atoum-next/badge.svg?branch=main)](https://coveralls.io/github/atoum-next/atoum-next?branch=main) [![Lint](https://github.com/atoum-next/atoum-next/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/atoum-next/atoum-next/actions/workflows/lint.yml?query=branch%3Amain)
+# *atoum-next* [![Package version](https://img.shields.io/packagist/v/atoum-next/atoum.svg)](https://packagist.org/packages/atoum-next/atoum) [![Build Status](https://github.com/atoum-next/atoum/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/atoum-next/atoum/actions/workflows/unit-tests.yml?query=branch%3Amain) [![Coverage Status](https://coveralls.io/repos/github/atoum-next/atoum/badge.svg?branch=main)](https://coveralls.io/github/atoum-next/atoum?branch=main) [![Lint](https://github.com/atoum-next/atoum/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/atoum-next/atoum/actions/workflows/lint.yml?query=branch%3Amain)
 
 > ## 📢 atoum-next: the continuation of atoum
 >
 > The original [*atoum*](https://github.com/atoum/atoum) project was archived by its maintainers. **atoum-next is a community-driven continuation of that project** — same philosophy, same fluent API, same `atoum` PHP namespace (so it remains a drop-in replacement), picking up active maintenance and modern PHP support where the original left off.
 >
-> Existing projects can switch over without any code change: `composer require atoum-next/atoum-next` replaces `atoum/atoum` thanks to Composer's `replace` mechanism.
+> Existing projects can switch over without any code change: `composer require atoum-next/atoum` replaces `atoum/atoum` thanks to Composer's `replace` mechanism.
 
 | PHP version | atoum / atoum-next version |
 |-------------|-----------------------------|
@@ -52,7 +52,7 @@ Finally, even though it is developed mainly on UNIX, it can also work on Windows
 
 ## Why atoum?
 
-* *atoum-next* is really [easy to install](http://docs.atoum.org/en/latest/installation.html): clone it [from github](https://github.com/atoum-next/atoum-next), download [its PHAR](https://github.com/atoum/atoum/releases/download/3.2.0/atoum.phar) (last release of the original *atoum*) or simply [use composer](https://packagist.org/packages/atoum-next/atoum-next),
+* *atoum-next* is really [easy to install](http://docs.atoum.org/en/latest/installation.html): clone it [from github](https://github.com/atoum-next/atoum), download [its PHAR](https://github.com/atoum/atoum/releases/download/3.2.0/atoum.phar) (last release of the original *atoum*) or simply [use composer](https://packagist.org/packages/atoum-next/atoum),
 * *atoum* provides a high level of security during test execution by isolating each test method in its own PHP process. Of course, this feature is available out of the box, no need to install any additional extension,
 * *atoum* runs tests in a parallelized environment making the suite run as fast as possible by taking advantage of today's multi-core CPUs,
 * *atoum* provides a [full-featured set of natural and expressive assertions](http://docs.atoum.org/en/latest/asserters.html) making tests as readable as possible. Here is an example:
@@ -199,7 +199,7 @@ If `Xdebug` or equivalent gets displayed, then the module is properly installed.
 
 You just have to download [its PHAR archive](https://github.com/atoum/atoum/releases/download/3.2.0/atoum.phar) (last release published by the original, now archived, *atoum* project) and store it where you wish, for example under `/path/to/project/tests/atoum.phar`.
 This PHAR archive contains the latest development version to pass the totality of *atoum*'s unit tests.
-*atoum-next*'s source code is available via [the GitHub repository](https://github.com/atoum-next/atoum-next).
+*atoum-next*'s source code is available via [the GitHub repository](https://github.com/atoum-next/atoum).
 To check if *atoum* works correctly with your configuration, you can execute all its unit tests.
 To do that, you just need to run the following command in your terminal:
 
@@ -400,8 +400,8 @@ When you are done updating or disabling [XDebug](http://xdebug.org/), run `php a
 
 Looking for a roadmap?
 
-- [Here is](https://github.com/atoum-next/atoum-next/labels/In%20progress) the work in progress,
-- [And there](https://github.com/atoum-next/atoum-next/milestones/*) what will come in next releases.
+- [Here is](https://github.com/atoum-next/atoum/labels/In%20progress) the work in progress,
+- [And there](https://github.com/atoum-next/atoum/milestones/*) what will come in next releases.
 
 ## Credits
 

@@ -1,5 +1,5 @@
 {
-	"name": "atoum-next/atoum-next",
+	"name": "atoum-next/atoum",
 	"type": "library",
 	"description": "Simple modern and intuitive unit testing framework for PHP 8.1+ — the community-driven continuation of atoum",
 	"keywords": ["TDD","atoum","atoum-next","test","unit testing"],
