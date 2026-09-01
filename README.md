@@ -1,14 +1,21 @@
 ![atoum's logo](resources/images/logo.png)
 
-# *atoum* [![Package version](https://img.shields.io/packagist/v/atoum/atoum.svg)](https://packagist.org/packages/atoum/atoum) [![Build Status](https://github.com/atoum/atoum/actions/workflows/unit-tests.yml/badge.svg?branch=master)](https://github.com/atoum/atoum/actions/workflows/unit-tests.yml?query=branch%3Amaster) [![Coverage Status](https://coveralls.io/repos/github/atoum/atoum/badge.svg?branch=master)](https://coveralls.io/github/atoum/atoum?branch=master) [![Lint](https://github.com/atoum/atoum/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/atoum/atoum/actions/workflows/lint.yml?query=branch%3Amaster) [![Gitter](https://badges.gitter.im/atoum/atoum.svg)](https://gitter.im/atoum/atoum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+# *atoum-next* [![Package version](https://img.shields.io/packagist/v/atoum-next/atoum.svg)](https://packagist.org/packages/atoum-next/atoum) [![Build Status](https://github.com/atoum-next/atoum/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/atoum-next/atoum/actions/workflows/unit-tests.yml?query=branch%3Amain) [![Coverage Status](https://coveralls.io/repos/github/atoum-next/atoum/badge.svg?branch=main)](https://coveralls.io/github/atoum-next/atoum?branch=main) [![Lint](https://github.com/atoum-next/atoum/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/atoum-next/atoum/actions/workflows/lint.yml?query=branch%3Amain)
 
-| PHP version | atoum version       |
-|-------------|---------------------|
-| 5.3 -> 5.6  | 1.x -> 3.x          |
-| 7.2 -> 8.1  | 4.X -> 4.1          |
-| 8.x         | 4.1 < 4.X (current) |
+> ## 📢 atoum-next: the continuation of atoum
+>
+> The original [*atoum*](https://github.com/atoum/atoum) project was archived by its maintainers. **atoum-next is a community-driven continuation of that project** — same philosophy, same fluent API, same `atoum` PHP namespace (so it remains a drop-in replacement), picking up active maintenance and modern PHP support where the original left off.
+>
+> Existing projects can switch over without any code change: `composer require atoum-next/atoum` replaces `atoum/atoum` thanks to Composer's `replace` mechanism.
 
-## 🚀 Full PHP 8.0-8.4 Support
+| PHP version | atoum / atoum-next version |
+|-------------|-----------------------------|
+| 5.3 -> 5.6  | 1.x -> 3.x                  |
+| 7.2 -> 8.1  | 4.x -> 4.1                  |
+| 8.x         | 4.1 -> 4.4 (atoum, archived) |
+| 8.1+        | **5.x (atoum-next, current)** |
+
+## 🚀 Full PHP 8.0-8.5 Support
 
 *atoum* now has **complete support** for modern PHP features, including:
 
@@ -17,8 +24,11 @@
 - **PHP 8.2**: Readonly Classes, DNF Types, Standalone `true`/`false`/`null` types
 - **PHP 8.3**: `#[\Override]` Attribute, Typed Class Constants
 - **PHP 8.4**: Property Hooks, Asymmetric Visibility, `#[\Deprecated]` Attribute
+- **PHP 8.5**: Tested and supported in CI, with mock generator compatibility fixes
 
 All these features are fully supported in the **mock generator**, ensuring your modern PHP code can be properly tested. See [PHP_MODERN_SUPPORT.md](PHP_MODERN_SUPPORT.md) for detailed documentation.
+
+> **Looking for annotations?** atoum now exposes native [test attributes](ATTRIBUTES.md). Legacy docblock annotations are still parsed for backward compatibility but emit deprecation notices and will be removed in a future major release.
 
 ## A simple, modern and intuitive unit testing framework for PHP!
 
@@ -42,7 +52,7 @@ Finally, even though it is developed mainly on UNIX, it can also work on Windows
 
 ## Why atoum?
 
-* *atoum* is really [easy to install](http://docs.atoum.org/en/latest/installation.html): clone it [from github](https://github.com/atoum/atoum), download [its PHAR](https://github.com/atoum/atoum/releases/download/3.2.0/atoum.phar) or simply [use composer](https://packagist.org/packages/atoum/atoum),
+* *atoum-next* is really [easy to install](http://docs.atoum.org/en/latest/installation.html): clone it [from github](https://github.com/atoum-next/atoum), download [its PHAR](https://github.com/atoum/atoum/releases/download/3.2.0/atoum.phar) (last release of the original *atoum*) or simply [use composer](https://packagist.org/packages/atoum-next/atoum),
 * *atoum* provides a high level of security during test execution by isolating each test method in its own PHP process. Of course, this feature is available out of the box, no need to install any additional extension,
 * *atoum* runs tests in a parallelized environment making the suite run as fast as possible by taking advantage of today's multi-core CPUs,
 * *atoum* provides a [full-featured set of natural and expressive assertions](http://docs.atoum.org/en/latest/asserters.html) making tests as readable as possible. Here is an example:
@@ -187,9 +197,9 @@ If `Xdebug` or equivalent gets displayed, then the module is properly installed.
 
 ### Step 1: Install *atoum*
 
-You just have to download [its PHAR archive](https://github.com/atoum/atoum/releases/download/3.2.0/atoum.phar) and store it where you wish, for example under `/path/to/project/tests/atoum.phar`.
+You just have to download [its PHAR archive](https://github.com/atoum/atoum/releases/download/3.2.0/atoum.phar) (last release published by the original, now archived, *atoum* project) and store it where you wish, for example under `/path/to/project/tests/atoum.phar`.
 This PHAR archive contains the latest development version to pass the totality of *atoum*'s unit tests.
-*atoum*'s source code is also available via [the GitHub repository](https://github.com/atoum/atoum).
+*atoum-next*'s source code is available via [the GitHub repository](https://github.com/atoum-next/atoum).
 To check if *atoum* works correctly with your configuration, you can execute all its unit tests.
 To do that, you just need to run the following command in your terminal:
 
@@ -390,17 +400,18 @@ When you are done updating or disabling [XDebug](http://xdebug.org/), run `php a
 
 Looking for a roadmap?
 
-- [Here is](https://github.com/atoum/atoum/labels/In%20progress) the work in progress,
-- [And there](https://github.com/atoum/atoum/milestones/*) what will come in next releases.
+- [Here is](https://github.com/atoum-next/atoum/labels/In%20progress) the work in progress,
+- [And there](https://github.com/atoum-next/atoum/milestones/*) what will come in next releases.
 
 ## Credits
 
-atoum has been created by [Frédéric Hardy]. It is now led by a strong community of contributors. You can find them
-in the [committer list](https://github.com/atoum/atoum/graphs/contributors) or in the
-[Contributors team](https://github.com/orgs/atoum/teams/contributors).
+*atoum* was originally created by [Frédéric Hardy] and led by a strong community of contributors — you can find
+them in the original project's [committer list](https://github.com/atoum/atoum/graphs/contributors). After the
+[original project was archived](https://github.com/atoum/atoum), **atoum-next** was started by the community to
+carry on its development, starting with version 5.0.
 
 ## License
 
-atoum is released under the BSD-3-Clause License. See the bundled [LICENSE](LICENSE) file for details.
+atoum-next, like the original atoum project, is released under the BSD-3-Clause License. See the bundled [LICENSE](LICENSE) file for details.
 
 [Frédéric Hardy]: https://github.com/mageekguy

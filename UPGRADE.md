@@ -1,4 +1,22 @@
-# atoum upgrade guide
+# atoum-next upgrade guide
+
+## From 4.4 (atoum) to 5.0 (atoum-next)
+
+Version 5.0 is the first release of **atoum-next**, the community continuation of the archived
+[atoum/atoum](https://github.com/atoum/atoum) project. The PHP namespace is unchanged (`atoum\...`), so this is a
+drop-in upgrade for most projects — only the Composer package name changes (`atoum-next/atoum`).
+
+atoum-next `5.0` requires **PHP `>= 8.1`**.
+
+With the transition to native PHP 8+ typing, several signatures in the core have changed.
+
+- **Runtime requirement:** atoum now mandates PHP 8.0 or higher.
+- **Method signatures:** overrides of internal classes must adopt the new parameter and return types (e.g. `: static`, `: void`).
+- **Magic methods:** `__set()` and `__unset()` now return `void`.
+- **Engines and observers:** `engine::run()` and `callObservers()` no longer support fluent chaining.
+- **Nullable handling:** methods such as `getScore()` return nullable types and must be checked before use.
+
+For the exhaustive list of affected APIs, concrete before/after examples, and migration tips for extension authors, consult [`BREAKING_CHANGES.md`](BREAKING_CHANGES.md).
 
 ## From 2.x to 3.x
 
