@@ -414,7 +414,7 @@ namespace atoum\atoum\tests\units
 
                     ->object($test->setFactoryBuilder())->isIdenticalTo($test)
                     ->object($test->getFactoryBuilder())
-                        ->isEqualTo(new atoum\Factory\builder\closure())
+                        ->isEqualTo(new atoum\factory\builder\closure())
                         ->isNotIdenticalTo($factoryBuilder)
             ;
         }
