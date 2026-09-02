@@ -333,7 +333,7 @@ abstract class test implements observable, \countable
 
     public function setFactoryBuilder(?factory\builder $factoryBuilder = null): static
     {
-        $this->factoryBuilder = $factoryBuilder ?: new factory\builder\Closure();
+        $this->factoryBuilder = $factoryBuilder ?: new factory\builder\closure();
 
         return $this;
     }
@@ -2100,9 +2100,15 @@ abstract class test implements observable, \countable
 
     private function addExceptionToScore(\exception $exception)
     {
-        list($file, $line) = $this->getBacktrace($exception->getTrace());
+        $backtrace = $this->getBacktrace($exception->getTrace());
 
-        $this->score->addException($file, $this->class, $this->currentMethod, $line, $exception);
+        $this->score->addException(
+            $backtrace[0] ?? $exception->getFile(),
+            $this->class,
+            $this->currentMethod,
+            $backtrace[1] ?? $exception->getLine(),
+            $exception
+        );
 
         return $this;
     }
